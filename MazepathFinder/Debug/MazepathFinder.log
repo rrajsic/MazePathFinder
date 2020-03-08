@@ -1,0 +1,9 @@
+﻿  EnumMoves.h
+  Maze.cpp
+  MazeDesigns.cpp
+  MazepathFinder.cpp
+  PlayerPosition.cpp
+  PrintMethodsMaze.cpp
+  Generating Code...
+C:\Users\38595\OneDrive\Documents\C++\MazepathFinder\MazepathFinder\Maze.cpp(235): warning C4715: 'Maze::goTillDeadEnd': not all control paths return a value
+  MazepathFinder.vcxproj -> C:\Users\38595\OneDrive\Documents\C++\MazepathFinder\Debug\MazepathFinder.exe
