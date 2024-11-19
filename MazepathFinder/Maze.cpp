@@ -216,22 +216,13 @@ bool Maze::goTillDeadEnd()
 {
 	if (isEnd())return true;
 	
-	else
-	{
-		if (goRight()) 
-			goTillDeadEnd();
-		
-		else if (goDown())
-			goTillDeadEnd();
-		
-		else if (goLeft())
-			goTillDeadEnd();
-		
-		else if (goUp())
-			goTillDeadEnd();
-		
-		else return false;
-	}
+	if (goRight() && goTillDeadEnd()) return true;
+	if (goDown() && goTillDeadEnd()) return true;
+	if (goLeft() && goTillDeadEnd()) return true;
+	if (goUp() && goTillDeadEnd()) return true;
+	
+	return false;
+	
 }
 
 void Maze::moveBack()
